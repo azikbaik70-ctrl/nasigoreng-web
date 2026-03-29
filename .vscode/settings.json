@@ -1,0 +1,27 @@
+{
+    "python-envs.pythonProjects": [
+        {
+            "path": "FILE MEMBUAT WEB/BELAJAR-CSS/img",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ],
+    "livePreview.defaultPreviewPath": "/FILE MEMBUAT WEB/BELAJAR-JAVASCRIPT/PROJECT-KALKULATOR/index.html",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Latihan_sql",
+            "database": "mysql",
+            "username": "root",
+            "password": ""
+        }
+    ]
+}

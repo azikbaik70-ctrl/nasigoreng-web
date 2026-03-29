@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>el coding</title>
+<style>
+    img{
+        display:block;
+        margin:auto;
+        }
+    body{
+        position: relative;
+        margin: 0%;
+        min-height: 100vh;
+    }
+    body::before{
+        content:"";
+        background-image: url('img/jerapah.jpg');
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+        position: fixed;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       z-index: -1;
+    }
+    p.border{
+       
+        border: 2px solid black;
+        margin: 25px auto ;
+        border-radius: 8px;
+        padding: 3px;
+        width: 50%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 150px;
+        
+    }
+    p.border1{
+        border: 1px solid brown;
+        margin: 25px 50px 75px 100px;
+        border-radius: 8px;
+        padding: 3px;
+        text-align: center;
+        width: 50%;
+        margin: 25px auto;
+    }
+    p.border2{
+        border: 2px solid black;
+        margin: 25px auto;
+        border-radius: 8px;
+        padding: 3px;
+        width: 50%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 150px;
+    }
+    @media only screen and(max-width:600px) {
+        .example{background: red;}
+    }
+    @media only screen and(min-width:600px) {
+        .example{background: blue}
+    }
+    @media only screen and(max-width:700px) {
+        .example{background:blueviolet}
+    }
+    @media only screen and(min-width:700px) {
+        .example{background:red}
+    }
+    @media only screen and(max-width:800px) {
+        .example{background:green}
+    }
+    @media only screen and(min-width:800px) {
+        .example{background:black}
+    }
+
+</style>
+</head>
+<body>
+    <img src="img/burung.jpg">
+<p class="border">ini adalah suatu adadadaa
+    adadadadafafafafadafafafafafafafa
+    adadadadafafafafadafafafafafafafa
+    adadadadafafafafadafafafafafafafa
+    yang makdadajfiafhagh ,width: 50%: Membatasi lebar agar tidak memanjang. Anda bisa menggantinya dengan angka tetap seperti 400px jika ingin ukurannya pasti.
+margin: 25px auto: Angka 25px mengatur jarak atas-bawah, sedangkan auto pada sisi kiri dan kanan adalah cara standar CSS untuk menggeser elemen blok ke tengah ruangan.
+Tips tambahan: Jika Anda ingin kolom tersebut fleksibel di layar HP, gunakan max-width sebagai pengganti width:
+max-width: 500px; dan width: 90%; 
+
+
+
+
+
+
+1 situs
+Styling Best Practices untuk Tailwind CSS | theodorusclarence.com
+18 Des 2021 — Width 90% akan memberikan padding ketika user membuka website dalam mobile view dan web akan di constrain ketika containernya suda...
+
+theodorusclarence.com
+
+<p class="border1">in</p>
+<p class="border2">ini</p>
+</body>
+</html>

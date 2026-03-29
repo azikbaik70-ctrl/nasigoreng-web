@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Srcset Responsive Image</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+      background: #f2f2f2;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      max-width: 900px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🖼️ Contoh Responsive Image (srcset + sizes)</h1>
+  <p>Coba kecilkan atau besarkan jendela browser-mu untuk lihat gambarnya berubah!</p>
+
+  <img 
+    src="https://picsum.photos/id/1018/480/300" 
+    srcset="
+      https://picsum.photos/id/1018/480/300 480w,
+      https://picsum.photos/id/1018/800/500 800w,
+      https://picsum.photos/id/1018/1200/700 1200w"
+    sizes="(max-width: 600px) 480px,
+           (max-width: 900px) 800px,
+           1200px"
+    alt="Pemandangan Pegunungan">
+
+</body>
+</html>
