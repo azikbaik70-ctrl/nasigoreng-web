@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Kalkulator</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+</body>
+<body class="background-calculator">
+    <div class="container">
+        <div class="atas"> Welcome in Calcultor buatan ajik</div>
+    </div>
+    <div class="calculator-box">
+        
+        <input id="tema" value="" placeholder="0" readonly>
+
+        <div class="button-grid">
+           
+            <button onclick="tambahangka('1')">1</button>
+            <button onclick="tambahangka('2')">2</button>
+            <button onclick="tambahangka('3')">3</button>
+            <button onclick="tambahangka('+')">+</button>
+            
+            <button onclick="tambahangka('4')">4</button>
+            <button onclick="tambahangka('5')">5</button>
+            <button onclick="tambahangka('6')">6</button>
+            <button onclick="tambahangka('*')">*</button>
+            
+            <button onclick="tambahangka('7')">7</button>
+            <button onclick="tambahangka('8')">8</button>
+            <button onclick="tambahangka('9')">9</button>
+            <button onclick="hapuslayar('C')">C</button>
+          
+           
+           <button onclick="hitunghasil('=')" style="grid-column: span 4;">=</button>
+    </div>
+
+    <p id="demo"></p>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

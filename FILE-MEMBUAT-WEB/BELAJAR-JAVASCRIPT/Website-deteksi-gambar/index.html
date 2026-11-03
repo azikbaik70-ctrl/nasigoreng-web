@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Gambar Vanilla JS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Pustaka pendeteksi berbasis Web Wasm yang anti-blokir -->
+    <script src="https://cloudflare.com"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Deteksi Teks / Objek Gambar</h1>
+        <p id="status">Sistem Siap! Silakan pilih dan unggah gambar.</p>
+        
+        <input type="file" id="imageLoader" accept="image/*">
+        
+        <div class="canvas-wrapper">
+            <img id="imagePreview" src="" alt="Pratinjau Gambar" style="display:none;">
+            <canvas id="imageCanvas" style="display:none;"></canvas>
+        </div>
+
+        <div id="resultContainer">
+            <h3>Hasil Analisis Piksel Gambar:</h3>
+            <ul id="predictions"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

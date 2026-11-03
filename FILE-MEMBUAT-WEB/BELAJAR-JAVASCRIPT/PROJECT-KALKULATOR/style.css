@@ -1,0 +1,55 @@
+.calculator-box{
+    background-color: #9999;
+    width: 180px;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 40px;
+    margin: 50px auto;
+}
+.background-calculator{
+    background: linear-gradient(135deg,
+    rgba(0,120,255,0.6),
+    rgba(255,230,0,0.6),
+    rgba(255,20,0,0.7)
+    );
+    min-height: 100vh;
+}
+.button-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+#tema{
+    width: 100px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 10px;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+    "atas atas"
+    "kiri kanan" 
+    "bawah bawah";
+    grid-template-columns: 1fr 2fr;
+    padding: 5px;
+}
+.container div{
+    background-color: rgba(0,120,255,0.6);
+    padding: 5px;
+}
+.container div.atas{
+    grid-area:atas;
+    text-align: center;
+}
+.container div.kiri{
+    grid-area: kiri ;
+}
+.container div.kanan{
+    grid-area: kanan;
+    text-align: center;
+}
+.container div.bawah{
+    grid-area: bawah;
+
+}

@@ -6,7 +6,7 @@
             "packageManager": "ms-python.python:pip"
         }
     ],
-    "livePreview.defaultPreviewPath": "/FILE MEMBUAT WEB/BELAJAR-JAVASCRIPT/PROJECT-KALKULATOR/index.html",
+    "livePreview.defaultPreviewPath": "/FILE MEMBUAT WEB/BELAJAR-JAVASCRIPT/PROJECT-KALKULATOR/membuat-quiz-app-dengantimer/index.html",
     "sqltools.connections": [
         {
             "mysqlOptions": {

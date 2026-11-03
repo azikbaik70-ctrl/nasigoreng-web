@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width,device-width,initial-scale=1.0">
+<meta content="UTF-8">
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="container">
+        <h1>Website Deteksi gambar / Teks</h1>
+        <p id="status">Sistem siap!! silakan uploag gambar</p>
+        <input type="file" id="gambarpemuat" accept="image/*">
+
+     <div class="pembungkuscanvas">
+        <img id="imagePreview" src="" alt="Pertinjau Gambar" style="display: none;">
+        <canvas id="imageCanvas" style="display: none;"></canvas>     
+        
+     </div>
+     <div id="resultContainer">
+        <h3>Hasil Analisis pada gambar</h3>
+        <ul id="predictions"></ul>
+     </div>   
+    </div>
+    <script src="script.js"></script>
+   <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+</body>
+</html>
