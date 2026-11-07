@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript"
+  src="https://app.sandbox.midtrans.com/snap/snap.js"
+  data-client-key="Mid-client-fMa5VKJmmakMZmIP"></script>
 </head>
 <body>
   <header class="navbar">
@@ -25,6 +28,28 @@
         <a href="#Menutambahan" data-nav>Menu Tambahan</a>
         <a href="#minuman" data-nav>Minuman</a>
         <a href="#Pembayaran" class="nav-cta" data-nav>Pembayaran</a>
+        <script type="text/javascript">
+          document.getElementById('pay-button').onclick = function () {
+            fetch('get_token.php')
+            .then(response => response.json())
+            .then(data => {
+              window.snap.pay(data.token, {
+                onSuccess: function(result) {
+                  alert("Pembayaran Berhasil!");
+                  console.log(result);
+                },
+                onPending: function(result) {
+                  alert("Menunggu pembayaran selesai!");
+                  console.log(result);
+                },
+                onError: function(result){
+                  alrert("Pembayaran Gagal!");
+                  console.log(result);
+                }
+              });
+            });
+          };
+          </script>
       </nav>
     </div>
   </header>
